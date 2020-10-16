@@ -12,7 +12,7 @@ class TweetViewController: UIViewController, UITextViewDelegate {
 
     @IBOutlet weak var tweetTextView: UITextView!
     @IBOutlet weak var countLabel: UILabel!
-    let charLim = 140
+    let charLim = 280
     
     override func viewDidLoad() {
         super.viewDidLoad()
