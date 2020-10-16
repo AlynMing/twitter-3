@@ -133,12 +133,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/140" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6B-ay-OVe">
+                                <rect key="frame" x="315" y="187" width="60" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="2pK-rj-OOy"/>
+                                    <constraint firstAttribute="height" constant="21" id="Cv3-do-vvI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PZo-MW-N76"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="BqX-uG-S5x" firstAttribute="leading" secondItem="PZo-MW-N76" secondAttribute="leading" id="0qz-Bb-NNz"/>
                             <constraint firstItem="PZo-MW-N76" firstAttribute="trailing" secondItem="BqX-uG-S5x" secondAttribute="trailing" id="GwD-FO-2l2"/>
+                            <constraint firstItem="PZo-MW-N76" firstAttribute="trailing" secondItem="f6B-ay-OVe" secondAttribute="trailing" id="re5-ds-NWW"/>
+                            <constraint firstItem="f6B-ay-OVe" firstAttribute="top" secondItem="BqX-uG-S5x" secondAttribute="bottom" constant="15" id="tmQ-O3-mmM"/>
                             <constraint firstItem="BqX-uG-S5x" firstAttribute="top" secondItem="PZo-MW-N76" secondAttribute="top" id="uyU-JY-1az"/>
                         </constraints>
                     </view>
@@ -157,6 +169,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="countLabel" destination="f6B-ay-OVe" id="8db-m4-TdA"/>
                         <outlet property="tweetTextView" destination="BqX-uG-S5x" id="IXK-kP-HJN"/>
                     </connections>
                 </viewController>
